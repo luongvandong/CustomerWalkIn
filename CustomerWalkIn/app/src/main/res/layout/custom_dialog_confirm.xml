@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_bg"
+              android:orientation="vertical"
+              android:paddingBottom="16dp"
+              android:paddingLeft="24dp"
+              android:paddingRight="24dp"
+              android:paddingTop="16dp"
+              android:windowMinWidthMajor="@android:dimen/dialog_min_width_major">
+
+  <TextView
+      android:id="@+id/tvTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Success"
+      android:textColor="@android:color/holo_red_light"
+      android:textSize="@dimen/size_18sp"/>
+
+  <TextView
+      android:id="@+id/tvMessage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_margin="@dimen/dimen_8dp"
+      android:textColor="@color/cl_sub_title"
+      android:textSize="20sp"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@color/clr_78909C"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:text="Cancel"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/clr_78909C"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:text="Ok"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp"/>
+  </LinearLayout>
+</LinearLayout>

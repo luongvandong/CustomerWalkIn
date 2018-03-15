@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="navi_width">300dp</dimen>
+  <dimen name="dimen_18dp">10dp</dimen>
+  <dimen name="dimen_10dp">10dp</dimen>
+  <dimen name="dimen_2dp">2dp</dimen>
+  <dimen name="dimen_8dp">8dp</dimen>
+  <dimen name="dimen_5dp">5dp</dimen>
+  <dimen name="size_18sp">18sp</dimen>
+  <dimen name="dimen_4dp">4dp</dimen>
+</resources>

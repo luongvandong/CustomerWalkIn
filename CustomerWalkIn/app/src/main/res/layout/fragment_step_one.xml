@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white"
+             android:baselineAligned="false"
+             android:clickable="true"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+             android:orientation="vertical"
+             tools:context="katana.customerwalkin.feature.StepOneFragment">
+
+  <ImageView
+      android:id="@+id/ivCover"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="center_horizontal"
+      android:contentDescription="@null"
+      android:scaleType="centerCrop"
+      android:src="@drawable/ic_background1"/>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:background="@android:color/white"
+      android:orientation="vertical"
+      android:padding="@dimen/dimen_18dp">
+
+    <EditText
+        android:id="@+id/edtMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_bg"
+        android:hint="@string/mobile_phone"
+        android:imeOptions="actionDone"
+        android:inputType="phone|number"
+        android:paddingBottom="15dp"
+        android:paddingLeft="@dimen/dimen_8dp"
+        android:paddingRight="@dimen/dimen_8dp"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dimen_8dp"
+        android:paddingTop="@dimen/dimen_8dp"
+        android:text="@string/or"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/size_18sp"/>
+
+    <LinearLayout
+        android:id="@+id/scanBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+      <EditText
+          android:id="@+id/edtQRCode"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/drawable_bg"
+          android:hint="@string/membership_by_qr_code"
+          android:imeOptions="actionDone"
+          android:inputType="number"
+          android:maxLines="1"
+          android:paddingBottom="15dp"
+          android:paddingLeft="@dimen/dimen_8dp"
+          android:paddingRight="@dimen/dimen_8dp"
+          android:paddingTop="15dp"
+          android:textColor="@android:color/black"
+          android:textColorHint="@color/colorPrimaryDark"/>
+
+      <Button
+          android:id="@+id/btnBarcode"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/dimen_8dp"
+          android:layout_marginStart="@dimen/dimen_8dp"
+          android:background="@drawable/selector_button"
+          android:paddingLeft="@dimen/dimen_18dp"
+          android:paddingRight="@dimen/dimen_18dp"
+          android:text="@string/barcode"
+          android:textAllCaps="false"
+          android:textColor="@android:color/white"
+          android:textSize="@dimen/size_18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+      <Button
+          android:id="@+id/btnSearch"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/dimen_18dp"
+          android:background="@drawable/selector_button"
+          android:paddingLeft="@dimen/dimen_18dp"
+          android:paddingRight="@dimen/dimen_18dp"
+          android:text="@string/search"
+          android:textAllCaps="false"
+          android:textColor="@android:color/white"
+          android:textSize="@dimen/size_18sp"/>
+    </LinearLayout>
+  </LinearLayout>
+</FrameLayout>

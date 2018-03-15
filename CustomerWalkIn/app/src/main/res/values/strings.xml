@@ -1,0 +1,28 @@
+<resources>
+  <string name="app_name">" CustomerWalkIn"</string>
+
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+  <string name="quick_customer_s">Quick Customer\'s</string>
+  <string name="mobile_phone">Mobile phone</string>
+  <string name="or">Or</string>
+  <string name="membership_by_qr_code">Membership by QR Code</string>
+  <string name="new_customer_s_register">New Customer\'s Register</string>
+  <string name="first_name">First Name</string>
+  <string name="last_name">Last Name</string>
+  <string name="search">Search</string>
+  <string name="next_step">Next Step</string>
+  <string name="go_back">Go Back</string>
+  <string name="next_select_service">Next Select Service</string>
+
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="done">Done</string>
+  <string name="register_more_than_one">Register More Than One</string>
+  <string name="setting">Setting</string>
+  <string name="textColor">TextColor</string>
+  <string name="save">Save</string>
+  <string name="buttonColor">ButtonColor</string>
+  <string name="barcode">Barcode</string>
+  <string name="register_service">Register service</string>
+  <string name="create_new">Create new</string>
+</resources>

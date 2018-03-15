@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="@dimen/dimen_8dp"
+                tools:context="katana.customerwalkin.feature.SelectEmployeesFragment">
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/rcvService"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true">
+  </android.support.v7.widget.RecyclerView>
+
+  <RelativeLayout
+      android:id="@+id/rlNote"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/lnBottom"
+      android:layout_below="@+id/rcvService"
+      android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="note: "
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edtNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/tv"
+        android:layout_toRightOf="@+id/tv"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences"
+        android:lines="2"
+        android:maxLines="4"
+        android:padding="@dimen/dimen_18dp"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@color/colorAccent"/>
+  </RelativeLayout>
+
+  <LinearLayout
+      android:id="@+id/lnBottom"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:gravity="center_horizontal"
+      android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_4dp"
+        android:layout_marginRight="@dimen/dimen_4dp"
+        android:background="@drawable/selector_button"
+        android:paddingLeft="@dimen/dimen_18dp"
+        android:paddingRight="@dimen/dimen_18dp"
+        android:text="@string/done"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/size_18sp"/>
+
+    <Button
+        android:id="@+id/btnRegisterMoreThan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_4dp"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_button"
+        android:paddingLeft="@dimen/dimen_18dp"
+        android:paddingRight="@dimen/dimen_18dp"
+        android:text="@string/register_more_than_one"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/size_18sp"
+        android:visibility="gone"/>
+  </LinearLayout>
+</RelativeLayout>
